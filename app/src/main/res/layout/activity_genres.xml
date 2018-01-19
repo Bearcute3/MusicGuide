@@ -16,51 +16,58 @@ tools:context="com.test.musicguide_1.Genres">
 
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_rock"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="110dp"
         android:layout_weight="20"
-        android:text="Button"
-        android:background="@drawable/genre1"/>
+        android:text="Рок"
+        android:textSize="17sp"
+        android:background="@drawable/rockgenre"
+        android:onClick="onClick"/>
 
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="110dp"
         android:layout_weight="20"
-        android:text="Buttossdsdsdsdsdsdsdsdsdsdn"
+        android:textSize="17sp"
+        android:text="Русский рок"
         android:background="@drawable/genre1"/>
 
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="110dp"
         android:layout_weight="20"
-        android:text="Button"
+        android:textSize="17sp"
+        android:text="Джаз"
         android:background="@drawable/genre1"/>
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="110dp"
         android:layout_weight="20"
-        android:text="Button"
+        android:textSize="17sp"
+        android:text="Шансон"
         android:background="@drawable/genre1"/>
 
     <Button
         android:id="@+id/button8"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="110dp"
+        android:textSize="17sp"
         android:layout_weight="20"
-        android:text="Button"
+        android:text="Индастриал"
         android:background="@drawable/genre1"/>
 
     <Button
         android:id="@+id/button9"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="110dp"
         android:layout_weight="20"
-        android:text="Button"
+        android:textSize="17sp"
+        android:text="Инди"
         android:background="@drawable/genre1"/>
 </LinearLayout>
 </ScrollView>

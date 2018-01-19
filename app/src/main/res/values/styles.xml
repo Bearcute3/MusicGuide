@@ -12,7 +12,9 @@
     </style>
 
     <style name="Genres" parent="Theme.AppCompat.DayNight">
-        <item name="android:background">@color/colorActionBar</item>
-        <item name="actionBarTheme">@color/colorActionBar</item>
+        <item name="colorPrimary">@color/colorActionBar</item>
+    </style>
+    <style name="Rock" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/colorRock</item>
     </style>
 </resources>
