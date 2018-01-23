@@ -6,4 +6,10 @@
     <color name="white">#FFFFFF</color>
     <color name="colorActionBar">#BFE0EB</color>
     <color name="colorRock">#41477B</color>
+    <color name="black">#424242</color>
+    <color name="bluze">#E9A644</color>
+    <color name="classic">#53AD6E</color>
+    <color name="metal">#946CAA</color>
+    <color name="pop">#CC68A5</color>
+    <color name="jazz">#EDEA64</color>
 </resources>

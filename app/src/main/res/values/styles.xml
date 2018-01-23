@@ -14,7 +14,28 @@
     <style name="Genres" parent="Theme.AppCompat.DayNight">
         <item name="colorPrimary">@color/colorActionBar</item>
     </style>
+
     <style name="Rock" parent="Theme.AppCompat.DayNight">
         <item name="colorPrimary">@color/colorRock</item>
+    </style>
+
+    <style name="bluze" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/bluze</item>
+    </style>
+
+    <style name="classic" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/classic</item>
+    </style>
+
+    <style name="jazz" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/jazz</item>
+    </style>
+
+    <style name="metal" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/metal</item>
+    </style>
+
+    <style name="pop" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/pop</item>
     </style>
 </resources>

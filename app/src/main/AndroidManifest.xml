@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.test.musicguide_1">
 
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,18 +23,50 @@
             </intent-filter>
         </activity>
         <activity
-            android:screenOrientation="portrait"
             android:name=".Genres"
             android:label="Жанры"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Genres">
-
-        </activity>
-        <activity android:name=".rock"
-            android:label="Рок"
             android:screenOrientation="portrait"
+            android:theme="@style/Genres" />
+
+        <activity
+            android:name=".rock"
+            android:label="Рок"
             android:parentActivityName=".Genres"
-            android:theme="@style/Rock">
+            android:screenOrientation="portrait"
+            android:theme="@style/Rock" />
+
+        <activity
+            android:name=".jazz"
+            android:label="Джаз"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/jazz"/>
+
+        <activity android:name=".pop"
+            android:label="Поп"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/pop"/>
+
+        <activity android:name=".metal"
+            android:label="Метал"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/metal"/>
+
+        <activity android:name=".classic"
+            android:label="Классика"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/classic"/>
+
+        <activity android:name=".bluze"
+            android:label="Блюз"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/bluze">
+
         </activity>
     </application>
 
