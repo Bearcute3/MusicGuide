@@ -9,14 +9,14 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context="com.test.musicguide_1.rock">
 
         <ImageView
             android:id="@+id/metalimageview"
             android:layout_width="wrap_content"
-            android:layout_height="380dp"
+            android:layout_height="390dp"
             android:scaleType="fitXY"
             android:src="@drawable/metal" />
 
@@ -25,12 +25,166 @@
             android:layout_height="match_parent"
             android:layout_marginStart="40dp"
             android:textColor="@color/black"
-            android:layout_marginTop="30dp"
-            android:textSize="22dp"
+            android:textSize="22sp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="30dp"
             android:layout_marginEnd="40dp"
-            android:text="@string/rock1"
-            android:lineSpacingMultiplier="1.3"/>
+            android:text="@string/metal1"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="640dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ledzeppelin" />
+        <TextView
+            android:id="@+id/metal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/metal3"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
 
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
 
+            <Button
+                android:id="@+id/startbuttonledzeppelin"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playledzeppelin"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonledzeppelin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauseledzeppelin"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonledzeppelin"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopledzeppelin"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/metal2"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/metal5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/metal5"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonblack"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playblack"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauseblack"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonblack"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopblack"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/metal6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/metal6"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/startbuttonkiss"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playkiss"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonkiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pausekiss"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonkiss"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopkiss"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

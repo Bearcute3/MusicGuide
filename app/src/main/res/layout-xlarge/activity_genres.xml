@@ -14,7 +14,36 @@ android:weightSum="100"
 android:orientation="vertical"
 tools:context="com.test.musicguide_1.Genres">
 
-
+    <Button
+        android:id="@+id/button_metal"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_weight="20"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:text="Метал"
+        android:background="@drawable/metalgenrelarge"
+        android:onClick="onClickMetal"/>
+    <Button
+        android:id="@+id/button_jazz"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_weight="20"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="Джаз"
+        android:background="@drawable/jazzgenrelarge"
+        android:onClick="onClickJazz"/>
+    <Button
+        android:id="@+id/button_bluze"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="165dp"
+        android:layout_weight="20"
+        android:textSize="30sp"
+        android:text="Блюз"
+        android:background="@drawable/bluzegenrelarge"
+        android:onClick="onClickBluze"/>
     <Button
         android:id="@+id/button_rock"
         android:layout_width="match_parent"
@@ -26,16 +55,6 @@ tools:context="com.test.musicguide_1.Genres">
         android:background="@drawable/rockgenrelarge"
         android:onClick="onClickRock"/>
 
-    <Button
-        android:id="@+id/button_jazz"
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
-        android:layout_weight="20"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:text="Джаз"
-        android:background="@drawable/jazzgenrelarge"
-        android:onClick="onClickJazz"/>
 
     <Button
         android:id="@+id/button_pop"
@@ -49,17 +68,6 @@ tools:context="com.test.musicguide_1.Genres">
         android:onClick="onClickPop"/>
 
     <Button
-        android:id="@+id/button_metal"
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
-        android:layout_weight="20"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:text="Метал"
-        android:background="@drawable/metalgenrelarge"
-        android:onClick="onClickMetal"/>
-
-    <Button
         android:id="@+id/button_classic"
         android:layout_width="match_parent"
         android:layout_height="165dp"
@@ -70,15 +78,6 @@ tools:context="com.test.musicguide_1.Genres">
         android:background="@drawable/classicgenrelarge"
         android:onClick="onClickClassic"/>
 
-    <Button
-        android:id="@+id/button_bluze"
-        android:layout_width="match_parent"
-        android:textColor="@color/black"
-        android:layout_height="165dp"
-        android:layout_weight="20"
-        android:textSize="30sp"
-        android:text="Блюз"
-        android:background="@drawable/bluzegenrelarge"
-        android:onClick="onClickBluze"/>
+
 </LinearLayout>
 </ScrollView>
