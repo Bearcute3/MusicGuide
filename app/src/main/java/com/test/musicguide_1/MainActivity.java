@@ -47,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Genres.class);
         startActivity(intent);
     }
+    public void onClickAutor(View v) {
+        Intent intent = new Intent(MainActivity.this,autor.class);
+        startActivity(intent);
+    }
 
 }
 

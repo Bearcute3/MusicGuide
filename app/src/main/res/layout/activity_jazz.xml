@@ -9,13 +9,13 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context="com.test.musicguide_1.rock">
 
         <ImageView
             android:id="@+id/jazzimageview"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="250dp"
             android:scaleType="fitXY"
             android:src="@drawable/jazz" />
@@ -25,10 +25,253 @@
             android:layout_height="match_parent"
             android:layout_marginStart="30dp"
             android:textColor="@color/black"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
-            android:text="@string/rock1"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/jazz1"
+            android:lineSpacingMultiplier="1.3"/>
+        <ImageView
+            android:id="@+id/armstrongimageview"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/armstrong"/>
+        <TextView
+            android:id="@+id/jazz6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/jazz6"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonarmstrong"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playarmstrong"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonarmstrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pausearmstrong"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonarmstrong"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stoparmstrong"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/jazz2"
+            android:lineSpacingMultiplier="1.3"/>
+        <TextView
+            android:id="@+id/jazz7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/jazz7"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttongoodman"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playgoodman"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttongoodman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pausegoodman"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttongoodman"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopgoodman"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginEnd="30dp"
+
+            android:text="@string/jazz3"
+            android:lineSpacingMultiplier="1.3"/>
+        <TextView
+            android:id="@+id/jazz8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/jazz8"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonparker"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playparker"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonparker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauseparker"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonparker"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopparker"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/jazz1imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="310dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/jazz1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/jazz4"
+            android:lineSpacingMultiplier="1.3"/>
+        <TextView
+            android:id="@+id/jazz9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/jazz9"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonmiles"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playmiles"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonmiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pausemiles"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonmiles"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopmiles"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/jazz5"
             android:lineSpacingMultiplier="1.3"/>
 
     </LinearLayout>

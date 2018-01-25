@@ -28,46 +28,48 @@
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Genres" />
-
         <activity
             android:name=".rock"
             android:label="Рок"
             android:parentActivityName=".Genres"
             android:screenOrientation="portrait"
             android:theme="@style/Rock" />
-
         <activity
             android:name=".jazz"
             android:label="Джаз"
             android:parentActivityName=".Genres"
             android:screenOrientation="portrait"
-            android:theme="@style/jazz"/>
-
-        <activity android:name=".pop"
+            android:theme="@style/jazz" />
+        <activity
+            android:name=".pop"
             android:label="Поп"
             android:parentActivityName=".Genres"
             android:screenOrientation="portrait"
-            android:theme="@style/pop"/>
-
-        <activity android:name=".metal"
+            android:theme="@style/pop" />
+        <activity
+            android:name=".metal"
             android:label="Метал"
             android:parentActivityName=".Genres"
             android:screenOrientation="portrait"
-            android:theme="@style/metal"/>
-
-        <activity android:name=".classic"
+            android:theme="@style/metal" />
+        <activity
+            android:name=".classic"
             android:label="Классика"
             android:parentActivityName=".Genres"
             android:screenOrientation="portrait"
-            android:theme="@style/classic"/>
-
-        <activity android:name=".bluze"
+            android:theme="@style/classic" />
+        <activity
+            android:name=".bluze"
             android:label="Блюз"
             android:parentActivityName=".Genres"
             android:screenOrientation="portrait"
             android:theme="@style/bluze">
-
+        </activity>
+        <activity android:name=".autor"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Genres"
+            android:label="О приложении">
         </activity>
     </application>
-
 </manifest>
