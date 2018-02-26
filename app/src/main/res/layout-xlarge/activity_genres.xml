@@ -5,79 +5,161 @@
     android:layout_height="wrap_content"
     android:fillViewport="true">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:weightSum="100"
-android:orientation="vertical"
-tools:context="com.test.musicguide_1.Genres">
-
-    <Button
-        android:id="@+id/button_metal"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="165dp"
-        android:layout_weight="20"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:text="Метал"
-        android:background="@drawable/metalgenrelarge"
-        android:onClick="onClickMetal"/>
-    <Button
-        android:id="@+id/button_jazz"
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
-        android:layout_weight="20"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:text="Джаз"
-        android:background="@drawable/jazzgenrelarge"
-        android:onClick="onClickJazz"/>
-    <Button
-        android:id="@+id/button_bluze"
-        android:layout_width="match_parent"
-        android:textColor="@color/black"
-        android:layout_height="165dp"
-        android:layout_weight="20"
-        android:textSize="30sp"
-        android:text="Блюз"
-        android:background="@drawable/bluzegenrelarge"
-        android:onClick="onClickBluze"/>
-    <Button
-        android:id="@+id/button_rock"
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
-        android:layout_weight="20"
-        android:textColor="@color/black"
-        android:text="Рок"
-        android:textSize="30sp"
-        android:background="@drawable/rockgenrelarge"
-        android:onClick="onClickRock"/>
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        tools:context="com.test.musicguide_1.Genres">
+
+        <Button
+            android:id="@+id/button_underground"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_weight="20"
+            android:text="Андеграунд"
+            android:background="@drawable/undergroundgenrelarge"
+            android:onClick="onClickUnderground"/>
+
+        <Button
+            android:id="@+id/button_bluze"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_weight="20"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:text="Блюз"
+            android:background="@drawable/bluzegenrelarge"
+            android:onClick="onClickBluze"/>
+
+        <Button
+            android:id="@+id/button_jazz"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_weight="20"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:text="Джаз"
+            android:background="@drawable/jazzgenrelarge"
+            android:onClick="onClickJazz"/>
+
+        <Button
+            android:id="@+id/button_disco"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_weight="20"
+            android:text="Диско"
+            android:background="@drawable/discogenrelarge"
+            android:onClick="onClickDisco"/>
+
+        <Button
+            android:id="@+id/button_classic"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_weight="20"
+            android:text="Классика"
+            android:background="@drawable/classicgenrelarge"
+            android:onClick="onClickClassic"/>
+
+        <Button
+            android:id="@+id/button_metal"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_weight="20"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:text="Метал"
+            android:background="@drawable/metalgenrelarge"
+            android:onClick="onClickMetal"/>
+
+        <Button
+            android:id="@+id/button_pop"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:textColor="@color/black"
+            android:layout_weight="20"
+            android:textSize="30sp"
+            android:text="Поп"
+            android:background="@drawable/popgenrelarge"
+            android:onClick="onClickPop"/>
+
+        <Button
+            android:id="@+id/button_postrock"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_weight="20"
+            android:text="Пост-рок"
+            android:background="@drawable/postrockgenrelarge"
+            android:onClick="onClickPostrock"/>
+
+        <Button
+            android:id="@+id/button_ritmnbluze"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_weight="20"
+            android:text="Ритм-н-Блюз"
+            android:background="@drawable/ritmnbluzegenrelarge"
+            android:onClick="onClickRitmnbluze"/>
 
 
-    <Button
-        android:id="@+id/button_pop"
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
-        android:layout_weight="20"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:text="Поп"
-        android:background="@drawable/popgenrelarge"
-        android:onClick="onClickPop"/>
+        <Button
+            android:id="@+id/button_rock"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_weight="20"
+            android:text="Рок"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:background="@drawable/rockgenrelarge"
+            android:onClick="onClickRock"/>
 
-    <Button
-        android:id="@+id/button_classic"
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
-        android:textSize="30sp"
-        android:layout_weight="20"
-        android:textColor="@color/black"
-        android:text="Классика"
-        android:background="@drawable/classicgenrelarge"
-        android:onClick="onClickClassic"/>
+        <Button
+            android:id="@+id/button_rocknroll"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_weight="20"
+            android:text="Рок-н-Ролл"
+            android:background="@drawable/rocknrollgenrelarge"
+            android:onClick="onClickRocknroll"/>
+
+        <Button
+            android:id="@+id/button_rap"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_weight="20"
+            android:text="Рэп"
+            android:background="@drawable/rapgenrelarge"
+            android:onClick="onClickRap"/>
 
 
-</LinearLayout>
+        <Button
+            android:id="@+id/button_electricmusic"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_weight="20"
+            android:text="Электро музыка"
+            android:background="@drawable/electricmusicgenrelarge"
+            android:onClick="onClickElectricmusic"/>
+
+
+
+    </LinearLayout>
 </ScrollView>

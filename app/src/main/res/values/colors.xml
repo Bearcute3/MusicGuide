@@ -12,4 +12,11 @@
     <color name="metal">#946CAA</color>
     <color name="pop">#CC68A5</color>
     <color name="jazz">#EDEA64</color>
+    <color name="disco">#D34C53</color>
+    <color name="electricmusic">#D97043</color>
+    <color name="postrock">#43A0DE</color>
+    <color name="rap">#8F5376</color>
+    <color name="ritmnbluze">#A0C758</color>
+    <color name="rocknroll">#9B4C4F</color>
+    <color name="underground">#595859</color>
 </resources>

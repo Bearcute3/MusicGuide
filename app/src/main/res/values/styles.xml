@@ -38,4 +38,33 @@
     <style name="pop" parent="Theme.AppCompat.DayNight">
         <item name="colorPrimary">@color/pop</item>
     </style>
+
+    <style name="disco" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/disco</item>
+    </style>
+
+    <style name="electricmusic" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/electricmusic</item>
+    </style>
+
+    <style name="postrock" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/postrock</item>
+    </style>
+
+    <style name="rap" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/rap</item>
+    </style>
+
+    <style name="ritmnbluze" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/ritmnbluze</item>
+    </style>
+
+    <style name="rocknroll" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/rocknroll</item>
+    </style>
+
+    <style name="underground" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/underground</item>
+    </style>
+
 </resources>

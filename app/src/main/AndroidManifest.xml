@@ -63,13 +63,55 @@
             android:label="Блюз"
             android:parentActivityName=".Genres"
             android:screenOrientation="portrait"
-            android:theme="@style/bluze">
-        </activity>
-        <activity android:name=".autor"
+            android:theme="@style/bluze" />
+        <activity
+            android:name=".autor"
+            android:label="О приложении"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Genres"
-            android:label="О приложении">
-        </activity>
+            android:theme="@style/Genres" />
+        <activity
+            android:name=".underground"
+            android:label="Андеграунд"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/underground" />
+        <activity
+            android:name=".disco"
+            android:label="Диско"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/disco" />
+        <activity
+            android:name=".postrock"
+            android:label="Пост-рок"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/postrock" />
+        <activity
+            android:name=".ritmnbluze"
+            android:label="Ритм-н-Блюз"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/ritmnbluze" />
+        <activity
+            android:name=".rocknroll"
+            android:label="Рок-н-Ролл"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/rocknroll" />
+        <activity
+            android:name=".rap"
+            android:label="Рэп"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/rap" />
+        <activity
+            android:name=".electricmusic"
+            android:label="Электронная музыка"
+            android:parentActivityName=".Genres"
+            android:screenOrientation="portrait"
+            android:theme="@style/electricmusic"/>
     </application>
+
 </manifest>

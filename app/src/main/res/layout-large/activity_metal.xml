@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context="com.test.musicguide_1.rock">
+        tools:context="com.test.musicguide_1.metal">
 
         <ImageView
             android:id="@+id/metalimageview"
