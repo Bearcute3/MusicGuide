@@ -202,7 +202,7 @@
             android:layout_marginTop="20dp"
             android:id="@+id/jazz1imageview"
             android:layout_width="wrap_content"
-            android:layout_height="310dp"
+            android:layout_height="290dp"
             android:scaleType="fitXY"
             android:src="@drawable/jazz1" />
         <TextView

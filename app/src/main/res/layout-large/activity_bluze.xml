@@ -9,9 +9,9 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context="com.test.musicguide_1.rock">
+        tools:context="com.test.musicguide_1.bluze">
 
         <ImageView
             android:id="@+id/bluzeimageview"
@@ -25,12 +25,190 @@
             android:layout_height="match_parent"
             android:layout_marginStart="40dp"
             android:textColor="@color/black"
+            android:textSize="22sp"
             android:layout_marginTop="30dp"
-            android:textSize="22dp"
+            android:layout_marginBottom="30dp"
             android:layout_marginEnd="40dp"
-            android:text="@string/rock1"
-            android:lineSpacingMultiplier="1.3"/>
+            android:text="@string/bluze1"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/bluze2"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="480dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bluze1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/bluze3"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="570dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bluze2" />
+        <TextView
+            android:id="@+id/bluze1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/bluzesong1"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
 
+            <Button
+                android:id="@+id/startbuttonbluze1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playbluze1"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
 
+            <Button
+                android:id="@+id/pausebuttonbluze1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pausebluze1"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonbluze1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopbluze1"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/bluze2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/bluzesong2"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonbluze2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playbluze2"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonbluze2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pausebluze2"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonbluze2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopbluze2"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/bluze4"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/bluze3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/bluzesong3"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonbluze3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playbluze3"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonbluze3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pausebluze3"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonbluze3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopbluze3"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
