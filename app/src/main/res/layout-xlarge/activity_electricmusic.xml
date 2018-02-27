@@ -1,9 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.test.musicguide_1.electricmusic">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.test.musicguide_1.electricmusic">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/electricmusic1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/electricmusic1"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/electricmusic2"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/electricmusic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/electricmusicsong1"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonelectricmusic1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playelectricmusic1"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonelectricmusic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauseelectricmusic1"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonelectricmusic1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopelectricmusic1"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/electricmusic3"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/electricmusic2" />
+        <TextView
+            android:id="@+id/electricmusic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/electricmusicsong2"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonelectricmusic2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playelectricmusic2"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonelectricmusic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauseelectricmusic2"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonelectricmusic2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopelectricmusic2"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/electricmusic4"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="480dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/electricmusic3" />
+
+        <TextView
+            android:id="@+id/electricmusic3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/electricmusicsong3"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonelectricmusic3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playelectricmusic3"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonelectricmusic3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauseelectricmusic3"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonelectricmusic3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stopelectricmusic3"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

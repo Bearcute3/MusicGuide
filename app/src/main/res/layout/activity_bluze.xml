@@ -14,7 +14,6 @@
         tools:context="com.test.musicguide_1.bluze">
 
         <ImageView
-            android:id="@+id/bluzeimageview"
             android:layout_width="wrap_content"
             android:layout_height="270dp"
             android:scaleType="fitXY"

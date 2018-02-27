@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/scroll"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:fillViewport="true">
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context="com.test.musicguide_1.rock">
 
         <ImageView
-            android:id="@+id/rockimageview"
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
+            android:layout_height="280dp"
             android:scaleType="fitXY"
             android:src="@drawable/rock" />
 
@@ -30,91 +29,200 @@ android:fillViewport="true">
             android:layout_marginBottom="20dp"
             android:layout_marginEnd="30dp"
             android:text="@string/rock1"
-            android:lineSpacingMultiplier="1.3"/>
-
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="255dp"
+            android:layout_height="235dp"
             android:scaleType="fitXY"
-            android:src="@drawable/deeppurple">
-        </ImageView>
-
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp">
-
-                    <Button
-                        android:id="@+id/start"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:onClick="play"
-                        android:layout_marginEnd="5dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/start_states"/>
-
-                    <Button
-                        android:id="@+id/pause"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="pause"
-                        android:layout_weight="1"
-                        android:background="@drawable/pause_states"/>
-
-                    <Button
-                        android:id="@+id/stop"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:onClick="stop"
-                        android:layout_marginStart="5dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/stop_states"/>
-
-        </LinearLayout>
+            android:src="@drawable/rock1" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="30dp"
             android:textColor="@color/black"
-            android:textSize="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp"
+            android:textSize="15sp"
             android:layout_marginBottom="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
             android:text="@string/rock2"
-            android:lineSpacingMultiplier="1.3"/>
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/rock3"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="370dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rock2" />
+        <TextView
+            android:id="@+id/rock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/rocksong1"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
         <LinearLayout
             android:layout_width="200dp"
             android:layout_height="40dp"
             android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp">
+            android:layout_gravity="center">
 
             <Button
-                android:id="@+id/start1"
+                android:id="@+id/startbuttonrock1"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:onClick="play1"
+                android:onClick="playrock1"
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/start_states"/>
 
             <Button
-                android:id="@+id/pause1"
+                android:id="@+id/pausebuttonrock1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="pause1"
+                android:onClick="pauserock1"
                 android:layout_weight="1"
                 android:background="@drawable/pause_states"/>
 
             <Button
-                android:id="@+id/stop1"
+                android:id="@+id/stopbuttonrock1"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:onClick="stop1"
+                android:onClick="stoprock1"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/rock2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/rocksong2"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonrock2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playrock2"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonrock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauserock2"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonrock2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stoprock2"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/rock4"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/rock5"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rock3" />
+        <TextView
+            android:id="@+id/rock3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/rocksong3"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonrock3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playrock3"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonrock3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauserock3"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonrock3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stoprock3"
                 android:layout_marginStart="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/stop_states"/>
@@ -122,4 +230,3 @@ android:fillViewport="true">
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
-

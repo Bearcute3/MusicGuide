@@ -1,9 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.test.musicguide_1.rocknroll">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.test.musicguide_1.rocknroll">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="430dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rocknroll1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/rocknroll1"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/rocknroll2"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="550dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rocknroll2" />
+        <TextView
+            android:id="@+id/rocknroll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/rocknrollsong1"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonrocknroll1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playrocknroll1"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonrocknroll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauserocknroll1"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonrocknroll1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stoprocknroll1"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/rocknroll3"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/rocknroll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/rocknrollsong2"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonrocknroll2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playrocknroll2"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonrocknroll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauserocknroll2"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonrocknroll2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stoprocknroll2"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/rocknroll4"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="730dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rocknroll3" />
+
+        <TextView
+            android:id="@+id/rocknroll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/rocknrollsong3"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/startbuttonrocknroll3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="playrocknroll3"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/start_states"/>
+
+            <Button
+                android:id="@+id/pausebuttonrocknroll3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pauserocknroll3"
+                android:layout_weight="1"
+                android:background="@drawable/pause_states"/>
+
+            <Button
+                android:id="@+id/stopbuttonrocknroll3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="stoprocknroll3"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/stop_states"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="40dp"
+            android:text="@string/rocknroll5"
+            android:lineSpacingMultiplier="1.3"
+            android:gravity="center"/>
+    </LinearLayout>
+</ScrollView>
